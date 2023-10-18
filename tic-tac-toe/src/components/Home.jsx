@@ -6,6 +6,9 @@ const Home = () => {
         <div className='playground'>
 
         </div>
+        <div className='results'>
+
+        </div>
     </div>
   )
 }
