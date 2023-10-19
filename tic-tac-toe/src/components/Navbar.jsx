@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>Tic Tac Toe</div>
+    <div className='brand'>Tic Tac Toe</div>
   )
 }
 
