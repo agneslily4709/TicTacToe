@@ -32,7 +32,12 @@ body {
         grid-template-columns: auto auto;
 }
 .board{
-        
+        display: grid;
+        grid-template-columns: auto auto auto;
+}
+.cell{
+        background-color: aliceblue;
+        border: 2px solid black;
 }
 .results{
         margin: 20px;
