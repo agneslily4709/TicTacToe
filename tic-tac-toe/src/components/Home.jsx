@@ -1,39 +1,32 @@
-import React, { useState } from 'react'
-
-const Cell = ({firstPlayer,setFirstPlayer}) => {
-        return (
-                <div className='cell' onClick={()=>setFirstPlayer((prev)=>!prev)}>
-                        {firstPlayer ? "Player 1":"Player 2"}
-                </div>
-        )
-}
+import React, { useState } from 'react';
 
 const Home = () => {
-        const [cellText,setCellText] = useState("")
-        const [firstPlayer,setFirstPlayer] = useState(false)
-        const cellArray = [1,2,3,4,5,6,7,8,9]
-  return (
-    <div className='home'>
-        <div className='playground'>
+    const playerList = ["Player1", "Player2"];
+    const [isOdd, setIsOdd] = useState(true);
+    const [cellArray, setCellArray] = useState({ 1: false, 2: false, 3: false, 4: false, 5: false, 6: false, 7: false, 8: false, 9: false });
+
+    return (
+        <div className='home'>
+            <div className='playground'>
                 <div className='notification'>
-                        <h1>Player 1 turn</h1>
-                        <h1>Player 2 turn</h1>
+                    <h1>{playerList[isOdd ? 0 : 1]} turn!</h1>
                 </div>
                 <div className='board'>
-                        {cellArray.map((cell)=>
-                                (
-                                        <div className='cell' onClick={()=>setFirstPlayer((prev)=>!prev)}>
-                                                {firstPlayer ? "Player 1":"Player 2"}
-                                        </div>
-                                )
-                        )}
+                    {cellArray && Object.keys(cellArray).map((idx) => (
+                        <div key={idx} className='cell' onClick={() => {
+                            setIsOdd((prev) => !prev);
+                            setCellArray({ ...cellArray, [idx]: true });
+                        }}>
+                            {cellArray[idx] === true ? (
+                                isOdd ? <div className="circle">hi</div> : <div className="cross">hi</div>
+                            ) : null}
+                        </div>
+                    ))}
                 </div>
+            </div>
+            <div className='results'></div>
         </div>
-        <div className='results'>
-
-        </div>
-    </div>
-  )
+    );
 }
 
-export default Home
+export default Home;
