@@ -25,12 +25,12 @@ body {
         grid-template-rows: 60vh 20vh;
         gap: 2rem;
 }
-.playground{
+/* .playground{
         margin: 20px;
         border: 2px solid crimson;
         display: grid;
         grid-template-columns: 600px auto;
-}
+} */
 .board{
         display: grid;
         grid-template-columns: auto auto auto;
@@ -43,34 +43,16 @@ body {
         margin: 20px;
         border: 2px solid green;
 }
-.cross{
-        background-color: crimson;
-}
-.circle{
-        background-color: green;
-}
-.game {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f4f4f4;
-      }
-      
+
       .game-board {
         display: grid;
-        grid-template-columns: repeat(3, 100px);
-        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
         gap: 4px;
         background-color: #333;
         border: 2px solid #333;
         padding: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      }
-      
-      .board-row {
-        display: flex;
       }
       
       .square {
