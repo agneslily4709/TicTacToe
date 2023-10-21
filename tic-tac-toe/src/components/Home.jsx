@@ -72,8 +72,8 @@ const Home = () => {
       </div>
       <div className="game-info">
         <div>{status}</div>
-      </div>
     </div>
+        </div>
         </div>
     );
 };
