@@ -19,7 +19,3 @@ body {
         font-size: 30px;
         font-weight: bolder;
 }
-.home{
-        display: flex;
-        flex-direction: column;
-}
