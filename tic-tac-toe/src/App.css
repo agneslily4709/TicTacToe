@@ -35,8 +35,3 @@ body {
         align-items: center;
         background-color: azure;
 }
-.board-row{
-        height: 40px;
-        width: 40px;
-        border: 2px solid crimson;
-}
