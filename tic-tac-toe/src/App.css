@@ -23,6 +23,3 @@ body {
         display: flex;
         flex-direction: column;
 }
-.playground{
-        height: 90vh;
-}
