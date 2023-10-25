@@ -52,7 +52,7 @@ const Home = () => {
         }
     return (
         <div className="home">
-   <div className="playground">
+    <div className="game">
       <div className="game-board">
         <div className="board-row">
           {renderSquare(0)}
@@ -72,8 +72,8 @@ const Home = () => {
       </div>
       <div className="game-info">
         <div>{status}</div>
+      </div>
     </div>
-        </div>
         </div>
     );
 };
