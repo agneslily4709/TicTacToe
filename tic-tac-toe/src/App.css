@@ -11,60 +11,57 @@ body {
     width: 100vw;
     height: 100vh;
 }
-.brand  {
-        background-color: navy;
-        color: aliceblue;
-        text-align: center;
-        padding: 20px;
-        font-size: 30px;
-        font-weight: bolder;
+.brand {
+    background-color: navy;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bolder;
 }
-.home{
-        background-color: white;
+.home {
+    background-color: white;
 }
 .game {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-        height: 90vh;
-      }
-      
-      .game-board {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-        background-color: navy;
-        border: 2px solid #333;
-        padding: 15px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      }
-      .status{
-        font-size: 30px;
-        font-weight: bold;
-        color: green;
-      }
-      .square {
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100px;
-        height: 100px;
-        background-color: #fff;
-        color: #333;
-        border: 2px solid navy;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-      
-      .square:hover {
-        background-color: cornflowerblue;
-      }
-      
-      .game-info {
-        margin-left: 20px;
-        text-align: center;
-        font-size: 24px;
-      }
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.game-board {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: navy;
+    border: 2px solid #333;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.status {
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+}
+.square {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid navy;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.square:hover {
+    background-color: cornflowerblue;
+}
+.game-info {
+    margin-left: 20px;
+    text-align: center;
+    font-size: 24px;
+}
