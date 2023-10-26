@@ -6,11 +6,7 @@ const Home = () => {
       
         const handleClick = (i) => {
           const newSquares = squares.slice();
-      
-          if (calculateWinner(squares) || newSquares[i]) {
-            return;
-          }
-      
+          if (calculateWinner(squares) || newSquares[i]) return
           newSquares[i] = xIsNext ? 'X' : 'O';
           setSquares(newSquares);
           setXIsNext(!xIsNext);
@@ -18,9 +14,7 @@ const Home = () => {
       
         const renderSquare = (i) => {
           return (
-            <button className="square" onClick={() => handleClick(i)}>
-              {squares[i]}
-            </button>
+            <button className="square" onClick={() => handleClick(i)}>{squares[i]}</button>
           );
         };
       
@@ -53,6 +47,9 @@ const Home = () => {
     return (
         <div className="home">
     <div className="game">
+    <div className="game-info">
+        <div className="status">{status}</div>
+      </div>
       <div className="game-board">
         <div className="board-row">
           {renderSquare(0)}
@@ -69,9 +66,6 @@ const Home = () => {
           {renderSquare(7)}
           {renderSquare(8)}
         </div>
-      </div>
-      <div className="game-info">
-        <div>{status}</div>
       </div>
     </div>
         </div>
